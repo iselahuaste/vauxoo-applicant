@@ -28,4 +28,27 @@ insert into employee_deparment values(40,'Compras','Adquiere buenas materias pri
 insert into employee_deparment values(50,'Produccion','Fabrica la producción más el stock objetivo que luego será comercializado por Ventas cumpliendo los objetivos de gastos.');
 insert into employee_deparment values(60,'Marketing','Colabora con el Comercial para conseguir más ventas y atender mejor a los clientes.');
 
+create table employee_hobbie(
+id_hobbie int not null primary key,
+nameh varchar(100),
+description varchar(500)
+);
+
+insert into employee_hobbie values(100,'Leer','Gusto por la lectura');
+insert into employee_hobbie values(200,'Viajar','Salir a conocer nuevos lugares');
+insert into employee_hobbie values(300,'Escuchar musica','Pasion por la musica');
+
+create table employeeshobbies(
+id_employee int,
+id_hobbie int
+);
+
+insert into employeeshobbies values(1,200);
+insert into employeeshobbies values(1,300);
+insert into employeeshobbies values(2,100);
+insert into employeeshobbies values(2,200);
+insert into employeeshobbies values(3,300);
+insert into employeeshobbies values(3,200);
+insert into employeeshobbies values(4,200);
+insert into employeeshobbies values(4,100);
 
