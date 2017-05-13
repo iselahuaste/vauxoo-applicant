@@ -7,13 +7,17 @@ id_employee int not null primary key,
 first_name varchar(50),
 last_name varchar(50),
 id_deparment int,
+id_jefe int,
 foreign key(id_deparment) references employee_deparment(id_deparment)
 );
 
-insert into employee values(1,'Rosa','Huaste',10);
-insert into employee values(2,'Yolanda','Juarez',20);
-insert into employee values(3,'Luis','Perez',50);
-insert into employee values(4,'Pablo','Lopez',60);
+insert into employee values(1,'Rosa','Huaste',10,4);
+insert into employee values(2,'Yolanda','Juarez',20,5);
+insert into employee values(3,'Luis','Perez',50,1);
+insert into employee values(4,'Pablo','Lopez',60,6);
+
+
+
 
 create table employee_deparment(
 id_deparment int not null primary key,
