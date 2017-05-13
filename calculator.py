@@ -1,19 +1,9 @@
 class calculator_class:
+    def sum(lista):
+        suma=0
+        for i in lista:
+            suma=i+suma
+        return suma
 
-    lista=[]
-    suma=0
-    def llenarlista(self):
-        r=int(raw_input('Ingrese Tamano De La Lista:'))
-        for i in range(r):
-            self.lista.append(int(raw_input("Ingrese Numero:")))
-        for i in self.lista:
-           print i
-
-    def sumar(self):
-        for i in self.lista:
-             self.suma+= i
-        print "La Suma De Los Datos Es:",self.suma
-
-obj = calculator_class()
-obj.llenarlista()
-obj.sumar()
+lista=[1,3,4,5]
+print sum(lista)
