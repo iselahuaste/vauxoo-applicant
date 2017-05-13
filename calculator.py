@@ -5,7 +5,7 @@
 
 class CalculatorClass(objet):
 
-"""clase que suma los elementos de una lista"""
+
 
 
     def sum(self,num_lista):
