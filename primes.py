@@ -1,16 +1,12 @@
-"""
-Your module documentation here
-"""
+class prime_class:
+    def is_prime(numero):
+        for i in range(2,numero):
+            if (numero%i)==0:
+                return False
+        return True
 
-
-class PrimeClass(object):
-    """
-    Your class documentation here
-    """
-
-    def is_prime(self, num_int):
-        """
-        Your method documentation here
-        """
-        # your primes code here
-        return "not implement yet"  # Remove this dummy line
+    num = int(raw_input("inserta un numero: "))
+    if is_prime(num):
+        print "\nEl numero %s es primo" % num
+    else:
+        print "\nEl numero %s NO es primo" % num
