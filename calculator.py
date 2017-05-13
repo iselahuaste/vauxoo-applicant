@@ -1,7 +1,10 @@
 
 """Suma de una lista"""
 
+
+
 class CalculatorClass(objet):
+
 """clase que suma los elementos de una lista"""
 
 
